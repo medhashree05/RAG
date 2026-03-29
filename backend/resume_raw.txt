@@ -1,0 +1,56 @@
+MEDHASHREE N
+72-12-10/1ab/2,Patamata, Benz Circle, Vijayawada ,Andhra Pradesh 520010
+♂phone+91 6305205840 /envel⌢pemedhashree4930@gmail.com /linkedinlinkedin.com/in/medhashree-n/ /githubgithub.com/medhashree05
+Education
+Indian Institute of Information T echnology (IIIT) – Kottayam (Kerala)August 2023 - April 2027
+B.Tech., Computer Science and Engineering CGPA - 9.55
+Sri Chaitanya Junior CollegeJuly 2021 - May 2023
+Grade 12 Percentage: 98.7
+Vidya Mandir E M High School (CBSE)June 2013 - May 2021
+Grade 10 Percentage: 95.6
+Relevant Coursework
+• Data Structures
+• Software Methodology
+• Database Management
+• Artificial Intelligence
+• Operating Systems
+• Machine Learning
+• Computer Networks
+• Data Analytics
+Experience
+T uring F eb 2026 - Present
+CPP Developer Work From Home
+• Reviewing and analyzing C++ solutions for a Microsoft project and competitive programming–style problems.
+• Testing and validating solutions by designing structured and edge-case test scenarios using Cursor AI and PG Agent.
+BizVidya June 2025 - Sep 2025
+Product Development|GitHub|Demo|Docs Work From Home
+• Worked on frontend and backend development to build a skill assessment report system for students,enabling analysis
+across multiple categories and performance metrics.(TechStack-React,CSS,Node,Express,Fast API,Gemini,Render).
+• Developing API’s for LMS and college systems to collect diverse data and integrating them into the frontend for
+interactive analytics dashboards and charts.
+• Created a Women’s Menstrual Health Chatbot using Streamlit, provide wellness tips, and offer AI-based personalized
+responses|GitHub
+Vidya Mandir School Dec 2024
+Front-End Contributer Kadapa,Andhra Pradesh
+• Contributed to changes in frontend development of the school website.Assisted in improving layout,design consistency
+and responsiveness.
+Projects
+P AO DCB Downloading Automation T ool|Git|exe File|Node.js,Puppeteer,JavaScriptDec 2025
+• Built a PAO DCB report downloading automation tool to eliminate manual portal operations,automated structured
+saving by date and DDO number.
+911 Emergency Response System|Git|Demo|React,Node,Express,Supabase,Twilio,Geoloc,JestAug 2025 - Oct 2025
+• Built a web platform for real-time alerts, admin monitoring, and dispatching with Twilio-based call/SMS notifications
+and live updates.
+B2B Ecommerce W ebsite|Demo|React JS,CSS,Node,Express,SupabaseJune 2025 - July 2025
+• A B2B Ecommerce website with features like order management , product management, user dashboard ,enquiry
+management and more. Fully integrated frontend and backend for user authenciation and admin control.
+Technical Skills
+Programming and Development:: C++, Python, Java, JavaScript,React JS, Node.js, Express.js, sql, REST APIs , Fast
+APIs .
+T ools and Platforms: Supabase, GitHub, Linux, Visual Studio Code ,Jupyter, Google Collab , MySQL, AWS/GCP,
+Docker, Kubernetes , Jenkins, Firebase .
+Leadership / Extracurricular
+Art Club Oct 2025 - Present
+Lead IIIT KOTTAYAM
+• Leading a creative team for fest decorations, event artwork, and campus design initiatives.
+• Coordinationg art exhibitions and creative workshops on campus.
