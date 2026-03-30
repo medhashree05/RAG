@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import "./App.css";
 
-const API = "https://rag-bccd.onrender.com";
+const API = "http://0.0.0.0:10000";
 
 /* ── Helpers ────────────────────────────────────────────────────────────── */
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
