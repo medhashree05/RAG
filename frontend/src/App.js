@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import "./App.css";
 
-const API = "http://0.0.0.0:10000";
+const API = "https://medha05-rag.hf.space";
 
 /* ── Helpers ────────────────────────────────────────────────────────────── */
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
