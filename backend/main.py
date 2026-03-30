@@ -10,14 +10,28 @@ import json
 import re
 from dotenv import load_dotenv
 import os
-
+from itertools import cycle
 load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
-if not api_key:
-    raise RuntimeError("GEMINI_API_KEY not found in .env file")
+api_keys = [
+    os.getenv("GEMINI_API_KEY_1"),
+    os.getenv("GEMINI_API_KEY_2"),
+    os.getenv("GEMINI_API_KEY_3"),
+]
+api_keys = [key for key in api_keys if key]
 
-genai.configure(api_key=api_key)
-gemini = genai.GenerativeModel("gemini-2.5-flash")
+if not api_keys:
+    raise ValueError("❌ No API keys found")
+
+print(f"✅ Loaded {len(api_keys)} API keys")
+
+# Create rotating cycle
+key_cycle = cycle(api_keys)
+
+def get_model():
+    key = next(key_cycle)
+    genai.configure(api_key=key)
+    return genai.GenerativeModel("gemini-2.5-flash")
+
 
 # ── App Setup ────────────────────────────────────────────────────────────────
 app = FastAPI(title="Resume Analyzer API", version="1.0.0")
@@ -173,6 +187,9 @@ Resume:
 {context}
 \"\"\"
 """
+    gemini = get_model()
+
+    
 
     raw = gemini.generate_content(prompt).text
     try:
@@ -199,6 +216,8 @@ Resume excerpt:
 {context}
 \"\"\"
 """
+    gemini = get_model()
+
     raw = gemini.generate_content(prompt).text
     return parse_json_response(raw)
 
@@ -222,6 +241,8 @@ Resume excerpt:
 {context}
 \"\"\"
 """
+    gemini = get_model()
+
     raw = gemini.generate_content(prompt).text
     return parse_json_response(raw)
 
@@ -253,6 +274,8 @@ Resume excerpt:
 {context}
 \"\"\"
 """
+    gemini = get_model()
+
     raw = gemini.generate_content(prompt).text
     return parse_json_response(raw)
 
@@ -283,6 +306,8 @@ Resume excerpt:
 {context}
 \"\"\"
 """
+    gemini = get_model()
+
     raw = gemini.generate_content(prompt).text
     return parse_json_response(raw)
 
@@ -313,6 +338,8 @@ Resume excerpt:
 {context}
 \"\"\"
 """
+    gemini = get_model()
+
     raw = gemini.generate_content(prompt).text
     return parse_json_response(raw)
 
@@ -377,6 +404,8 @@ Full Resume:
 {raw_resume_text}
 \"\"\"
 """
+        gemini = get_model()
+
         raw = gemini.generate_content(prompt).text
         try:
             return parse_json_response(raw)
@@ -401,6 +430,9 @@ Resume excerpt:
 
 Question: {query}
 """
+        gemini = get_model()
+
+    
         response = gemini.generate_content(prompt)
         return {"answer": response.text}
 
