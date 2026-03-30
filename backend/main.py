@@ -22,7 +22,7 @@ gemini = genai.GenerativeModel("gemini-2.5-flash")
 
 # ── App Setup ────────────────────────────────────────────────────────────────
 app = FastAPI(title="Resume Analyzer API", version="1.0.0")
-
+#allow_origins = [    "https://your-frontend-url.onrender.com"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
